@@ -10,11 +10,8 @@ namespace Лабораторная__4._1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("what can i do? well...");
-            Console.WriteLine("\ta - add!");
-            Console.WriteLine("\ta - subtract!");
-            Console.WriteLine("\ta - multiply!");
-            Console.WriteLine("\ta - divide!");
+            bool endApp = false;
+            Console.WriteLine("your cute calculator");
         }
     }
 }
