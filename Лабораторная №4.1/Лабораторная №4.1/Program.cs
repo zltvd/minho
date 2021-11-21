@@ -15,7 +15,7 @@ namespace Лабораторная__4._1
             Console.WriteLine("------------------------\n");
             Console.WriteLine("------------------------\n");
             Console.WriteLine("лерка");
-
+            Console.WriteLine("дашка");
         }
     }
 }
