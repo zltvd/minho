@@ -11,7 +11,6 @@ namespace Лабораторная__4._1
         public static double DoOperation(double num1, double num2, string op)
         {
             double result = double.NaN;
-<<<<<<< HEAD
             switch (op)
             {
                 case "a":
@@ -21,30 +20,24 @@ namespace Лабораторная__4._1
             {
                 case "b":
                     result = num1 - num2;
-=======
 
             switch (op)
             {
                 case "c":
                     result = num1 * num2;
->>>>>>> multiplication
                     break;
                 default:
                     break;
             }
             return result;
-<<<<<<< HEAD
         }
     }
 
         }
     }
-=======
 
         }
     }
-
->>>>>>> multiplication
     class Program
     {
         static void Main(string[] args)
