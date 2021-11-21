@@ -11,32 +11,25 @@ namespace Лабораторная__4._1
         public static double DoOperation(double num1, double num2, string op)
         {
             double result = double.NaN;
-<<<<<<< HEAD
             switch (op)
             {
                 case "a":
                     result = num1 + num2;
-=======
 
             switch (op)
             {
                 case "b":
                     result = num1 - num2;
->>>>>>> subtract
                     break;
                 default:
                     break;
             }
             return result;
-<<<<<<< HEAD
-        }
-    }
-=======
-
         }
     }
 
->>>>>>> subtract
+        }
+    }
     class Program
     {
         static void Main(string[] args)
