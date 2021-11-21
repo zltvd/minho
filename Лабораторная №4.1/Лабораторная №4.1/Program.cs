@@ -12,7 +12,10 @@ namespace Лабораторная__4._1
         {
             bool endApp = false;
             Console.WriteLine("your cute calculator");
-            Console.WriteLine("------------------------\n");
+            while (!endApp)
+            {
+                double result = 0;
+                string op = Console.ReadLine();
 
             while (!endApp)
             {
@@ -50,7 +53,31 @@ namespace Лабораторная__4._1
                     Console.Write("your option? ");
                 }
             }
+                try
+                {
+                    result = Calculator.DoOperation(cleanNum1, cleanNum2, op);
+                    if (double.IsNaN(result))
+                    {
+                        Console.WriteLine("this operation will result in a mathematical error.\n");
+                    }
+                    else Console.WriteLine("your result: {0:0.##}\n", result);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("oh no! an exception occurred trying to do the math.\n - details: " + e.Message);
+                }
+
+                Console.WriteLine("------------------------\n");
+
+                Console.Write("press 'n' and enter to close the app, or press any other key and Enter to continue: ");
+                if (Console.ReadLine() == "n") endApp = true;
+
+                Console.WriteLine("\n");
+            }
+            return;
+
         }
     }
+}
 }
 
