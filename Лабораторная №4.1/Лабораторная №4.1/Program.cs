@@ -13,6 +13,9 @@ namespace Лабораторная__4._1
             bool endApp = false;
             Console.WriteLine("your cute calculator");
             Console.WriteLine("------------------------\n");
+            Console.WriteLine("------------------------\n");
+            Console.WriteLine("лерка");
+
         }
     }
 }
