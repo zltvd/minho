@@ -16,7 +16,6 @@ namespace Лабораторная__4._1
 
             while (!endApp)
             {
-<<<<<<< HEAD
                 string numInput1 = "";
                 Console.Write("type a number, and then press enter: ");
                 numInput1 = Console.ReadLine();
@@ -26,18 +25,18 @@ namespace Лабораторная__4._1
                 {
                     Console.Write("this is not valid input; please enter an integer value: ");
                     numInput1 = Console.ReadLine();
-=======
-                string numInput2 = "";
+                    string numInput2 = "";
 
-                Console.Write("type another number, and then press Enter: ");
-                numInput2 = Console.ReadLine();
-
-                double cleanNum2 = 0;
-                while (!double.TryParse(numInput2, out cleanNum2))
-                {
-                    Console.Write("this is not valid input; please enter an integer value: ");
+                    Console.Write("type another number, and then press Enter: ");
                     numInput2 = Console.ReadLine();
->>>>>>> typeB
+
+                    double cleanNum2 = 0;
+                    while (!double.TryParse(numInput2, out cleanNum2))
+                    {
+                        Console.Write("this is not valid input; please enter an integer value: ");
+                        numInput2 = Console.ReadLine();
+
+                    }
                 }
             }
         }
