@@ -13,7 +13,6 @@ namespace Лабораторная__4._1
             bool endApp = false;
             Console.WriteLine("your cute calculator");
             Console.WriteLine("------------------------\n");
-<<<<<<< HEAD
 
             while (!endApp)
             {
@@ -39,17 +38,19 @@ namespace Лабораторная__4._1
 
                     }
                 }
-=======
-            while (!endApp)
-            {
-                Console.WriteLine("choose an operator from the following list:");
-                Console.WriteLine("\ta - add");
-                Console.WriteLine("\tb - subtract");
-                Console.WriteLine("\tc - multiply");
-                Console.WriteLine("\td - divide");
-                Console.Write("your option? ");
->>>>>>> menu
+
+
+                while (!endApp)
+                {
+                    Console.WriteLine("choose an operator from the following list:");
+                    Console.WriteLine("\ta - add");
+                    Console.WriteLine("\tb - subtract");
+                    Console.WriteLine("\tc - multiply");
+                    Console.WriteLine("\td - divide");
+                    Console.Write("your option? ");
+                }
             }
         }
     }
 }
+
