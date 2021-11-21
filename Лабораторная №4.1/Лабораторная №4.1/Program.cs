@@ -11,61 +11,40 @@ namespace Лабораторная__4._1
         public static double DoOperation(double num1, double num2, string op)
         {
             double result = double.NaN;
-<<<<<<< HEAD
             switch (op)
             {
                 case "a":
                     result = num1 + num2;
-
-            switch (op)
-            {
+                    break;
                 case "b":
                     result = num1 - num2;
-
-            switch (op)
-            {
+                    break;
                 case "c":
                     result = num1 * num2;
-=======
-
-            switch (op)
-            {
+                    break;
                 case "d":
                     result = num1 / num2;
->>>>>>> divide
                     break;
                 default:
                     break;
             }
             return result;
-<<<<<<< HEAD
         }
     }
-=======
->>>>>>> divide
-
-        }
-    }
-
-<<<<<<< HEAD
-        }
-    }
-=======
->>>>>>> divide
     class Program
     {
         static void Main(string[] args)
         {
             bool endApp = false;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("your cute calculator");
-            while (!endApp)
-            {
-                double result = 0;
-                string op = Console.ReadLine();
-
+            Console.WriteLine("------------------------\n");
             while (!endApp)
             {
                 string numInput1 = "";
+                string numInput2 = "";
+                double result = 0;
+
                 Console.Write("type a number, and then press enter: ");
                 numInput1 = Console.ReadLine();
 
@@ -74,31 +53,27 @@ namespace Лабораторная__4._1
                 {
                     Console.Write("this is not valid input; please enter an integer value: ");
                     numInput1 = Console.ReadLine();
-                    string numInput2 = "";
-
-                    Console.Write("type another number, and then press Enter: ");
-                    numInput2 = Console.ReadLine();
-
-                    double cleanNum2 = 0;
-                    while (!double.TryParse(numInput2, out cleanNum2))
-                    {
-                        Console.Write("this is not valid input; please enter an integer value: ");
-                        numInput2 = Console.ReadLine();
-
-                    }
                 }
 
+                Console.Write("type another number, and then press enter: ");
+                numInput2 = Console.ReadLine();
 
-                while (!endApp)
+                double cleanNum2 = 0;
+                while (!double.TryParse(numInput2, out cleanNum2))
                 {
-                    Console.WriteLine("choose an operator from the following list:");
-                    Console.WriteLine("\ta - add");
-                    Console.WriteLine("\tb - subtract");
-                    Console.WriteLine("\tc - multiply");
-                    Console.WriteLine("\td - divide");
-                    Console.Write("your option? ");
+                    Console.Write("this is not valid input; please enter an integer value: ");
+                    numInput2 = Console.ReadLine();
                 }
-            }
+                Console.WriteLine("choose an operator from the following list:");
+                Console.WriteLine("\ta - add");
+                Console.WriteLine("\tb - subtract");
+                Console.WriteLine("\tc - multiply");
+                Console.WriteLine("\td - divide");
+                Console.Write("Your option? ");
+
+
+                string op = Console.ReadLine();
+
                 try
                 {
                     result = Calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -123,6 +98,5 @@ namespace Лабораторная__4._1
             return;
         }
     }
-}
 }
 
