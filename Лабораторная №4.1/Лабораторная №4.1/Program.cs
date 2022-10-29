@@ -22,6 +22,8 @@ namespace Лабораторная__4._1
                 Console.WriteLine("\td - divide");
                 Console.Write("your option? ");
                 Console.Write("your option? ");
+
+                Console.Write("your option? ");
             }
         }
     }
